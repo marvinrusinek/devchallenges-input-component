@@ -1,0 +1,257 @@
+@import "../../styles/variables";
+
+.buttons {
+  h1 {
+    font: 500 24px "Poppins", sans-serif;
+    color: $light-black;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+
+  code {
+    font: 400 12px "Ubuntu Mono", sans-serif;
+    color: $gray-black;
+    width: 300px;
+    padding-bottom: 5px;
+  }
+
+  button {
+    font: 500 14px "Noto Sans JP", sans-serif;
+    color: $very-dark-gray;
+    background-color: $very-light-gray;
+    border-radius: 6px;
+    box-shadow: $dark-charcoal;
+    width: 81px;
+    height: 36px;
+    text-align: center;
+
+    &:hover, &:focus {
+      background-color: $dark-gray;
+      color: $very-dark-gray;
+      cursor: pointer;
+    }
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .basic-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
+    width: 640px;
+
+    .button-wrapper {
+      padding-right: 50px;
+
+      &:nth-child(1) button {
+        box-shadow: $dark-charcoal;
+      }
+      &:nth-child(2) button {
+        background-color: $dark-gray;
+        box-shadow: $dark-charcoal;
+      }
+      &:nth-child(3) button {
+        background-color: transparent;
+        border: 1px solid $medium-blue;
+        color: $medium-blue;
+      }
+      &:nth-child(4) button {
+        background-color: $royal-blue;
+        border: 1px solid $medium-blue;
+        color: $medium-blue;
+      }
+      &:nth-child(5) button {
+        background-color: transparent;
+        color: $medium-blue;
+      }
+      &:nth-child(6) button {
+        background-color: $royal-blue;
+        border: none;
+        color: $medium-blue;
+      }
+      &:nth-child(7) button {
+        background-color: $medium-blue;
+        border: none;
+        color: $white;
+      }
+      &:nth-child(9) button {
+        color: $medium-gray;
+      }
+      &:nth-child(9) button:hover {
+        cursor: none;
+      }
+      &:nth-child(10) button {
+        background-color: transparent;
+        border: none;
+        color: $medium-gray;
+      }
+      &:nth-child(10) button:hover {
+        cursor: none;
+      }
+    }
+  }
+
+  .button-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    margin: 30px 0;
+    width: 880px;
+
+    .button-wrapper {
+      button {
+        width: 105px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .material-icons {
+          display: inline-flex;
+          vertical-align: middle;
+        }
+
+        &:hover, &:focus {
+          background-color: $dark-gray;
+          color: $very-dark-gray;
+          cursor: pointer;
+        }
+      }
+
+      &:nth-child(1) button {
+        display: flex;
+        background-color: $medium-blue;
+        width: 105px;
+        height: 36px;
+        color: $white;
+        box-shadow: $very-dark-blue;
+        justify-content: space-between;
+      }
+      &:nth-child(2) button {
+        display: flex;
+        background-color: $medium-blue;
+        width: 105px;
+        height: 36px;
+        color: $white;
+        box-shadow: $very-dark-blue;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .button-sizes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    margin: 40px 0;
+    width: 15px;
+
+    .button-wrapper {
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &:nth-child(1) button {
+        background-color: $medium-blue;
+        border: none;
+        color: $white;
+        padding: 10px 10px;
+        box-shadow: $very-dark-blue;
+        width: 73px;
+        height: 32px;
+      }
+      &:nth-child(2) button {
+        background-color: $medium-blue;
+        border: none;
+        color: $white;
+        box-shadow: $very-dark-blue;
+        width: 81px;
+        height: 36px;
+      }
+      &:nth-child(3) button {
+        background-color: $medium-blue;
+        border: none;
+        color: $white;
+        padding: 25px 25px;
+        box-shadow: $very-dark-blue;
+        width: 93px;
+        height: 42px;
+      }
+    }
+  }
+
+  .button-colors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 50px;
+
+    .button-wrapper {
+      button {
+        box-shadow: $dark-charcoal;
+        color: $white;
+        width: fit-content;
+      }
+
+      &:nth-child(1) button {
+        color: $very-dark-gray;
+      }
+      &:nth-child(2) button {
+        background-color: $medium-blue;
+        border: none;
+        color: $white;
+      }
+      &:nth-child(3) button {
+        background-color: $gray-blue;
+        border: none;
+        color: $white;
+      }
+      &:nth-child(4) button {
+        background-color: $dark-red;
+        border: none;
+        color: $white;
+      }
+      &:nth-child(5) button {
+        background-color: $dark-gray;
+        color: $very-dark-gray;
+      }
+      &:nth-child(6) button {
+        background-color: $dark-blue;
+        border: none;
+        color: $white;
+      }
+      &:nth-child(7) button {
+        background-color: $dark-cyan;
+        border: none;
+        color: $white;
+      }
+      &:nth-child(8) button {
+        background-color: $dark-pink-red;
+        border: none;
+        color: $white;
+      }
+    }
+  }
+
+  .resources {
+    clear: both;
+    font: 400 12px "Ubuntu Mono", sans-serif;
+    color: $battleship-gray;
+    padding-top: 50px;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $turquoise;
+      }
+    }
+  }
+}
